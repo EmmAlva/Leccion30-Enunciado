@@ -11,11 +11,10 @@
 	<!--FONTS-->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,500,600" rel="stylesheet">	
 </head>
-<body>
-	<!-- Escribe tu código aquí -->
-	<header>
-		<div>START BOOTSTRAP</div>
-		<nav>
+<body class="container">
+	<header class="row">
+		<div class="col-6">START BOOTSTRAP</div>
+		<nav class="col-6">
 			<ul>
 				<li><a href="">PORTAFOLIO</a></li>
 				<li><a href="">ABOUT</a></li>
@@ -23,37 +22,92 @@
 			</ul>
 		</nav>
 	</header>
-	<section>
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<section id="about">
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<span class="fa fa-star fa-lg" aria-hidden="true"></span>
-	<section>
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<span class="fa fa-star fa-lg"></span>
-	<section>
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<span class="fa fa-star fa-lg"></span>
 
-	<footer>
-		<span class="fa fa-facebook fa-lg" aria-hidden="true"></span>
-		<span class="fa fa-google-plus fa-lg" aria-hidden="true"></span>
-		<span class="fa fa-twitter fa-lg" aria-hidden="true"></span>
-		<span class="fa fa-linkedin fa-lg" aria-hidden="true"></span>
-		<span></span>
-		<span class="fa fa-dribbble fa-lg" aria-hidden="true"></span>
+	<section id="intro" class="row">
+		<div>
+			<img src="assets/images/profile.png" alt="">
+			<h1>START BOOTSTRAP</h1>
+			<hr class="star"></hr>
+			<div>Web Developer - Graphic Artist - User EXperience Designer</div>
+		</div>		
+	</section>
+
+	<section id="portafolio" class="row">
+		<div>
+			<h2>PORTAFOLIO</h2>
+			<hr class="star"></hr>
+			<div class="row">
+				<div class="col-4"><img src="assets/images/portfolio/cabin.png" alt="cabana"></div>
+				<div class="col-4"><img src="assets/images/portfolio/cake.png" alt="pastel"></div>
+				<div class="col-4"><img src="assets/images/portfolio/circus.png" alt="circo"></div>
+				<div class="col-4"><img src="assets/images/portfolio/game.png" alt="control"></div>
+				<div class="col-4"><img src="assets/images/portfolio/safe.png" alt="cajaFuerte"></div>
+				<div class="col-4"><img src="assets/images/portfolio/submarine.png" alt="submarine"></div>
+			</div>			
+		</div>
+	</section>
+
+	<section id="about" class="row">
+		<div>
+			<h2>ABOUT</h2>
+			<div><span class="fa fa-star fa-lg"></span></div>		
+			<p class="col-6">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+			<p class="col-6">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+			<a class="btn" class="fa fa-download" aria-hidden="true" href="">Download Theme</a>
+		</div>
+	</section>
+	
+	<section id="contact" class="row">
+		<div>
+			<div><span class="fa fa-star fa-lg"></span></div>
+			<div>
+				<form action="">
+					<div>
+					<label for=""></label>
+					<input type="text" placeholder="Name">
+					<span class="wrong0"></span>
+					</div>
+					<div>
+					<label for=""></label>
+					<input type="email" placeholder="EmailAddress">
+					<span class="wrong1"></span>
+					</div>
+					<div>
+					<label for=""></label>
+					<input type="tel" placeholder="Phone Number">
+					<span class="wrong2"></span></div>
+					<div>
+					<label for=""></label>
+					<input type="textarea" placeholder="Message">
+					<span class="wrong3"></span></div>
+				</form>
+			</div>
+			<a class="btn" href="">Send</a>
+		</div>
+	</section>
+	<footer class="row">
+		<div class="col-4">
+			<h3>LOCATION</h3>
+			<span>3481 Melrose Place</span>
+			<span>Beverly Hills, CA 90210</span>
+		</div>
+		<div class="col-4">
+			<h3>AROUND THE WEB</h3>
+			<span class="fa fa-facebook fa-lg" aria-hidden="true"></span>
+			<span class="fa fa-google-plus fa-lg" aria-hidden="true"></span>
+			<span class="fa fa-twitter fa-lg" aria-hidden="true"></span>
+			<span class="fa fa-linkedin fa-lg" aria-hidden="true"></span>
+			<span></span>
+			<span class="fa fa-dribbble fa-lg" aria-hidden="true"></span>
+		</div>
+		<div class="col-4">
+			<h3>ABOUT FREELANCER</h3>
+			<p>Freelance is a free to use, open source Bootstrap theme created by <a href="" style="color: rgb(31, 137, 125)">Start Bootstrap</a>.</p>
+		</div>
+		<div id="end" class="col-12">
+			<span>Copyright © Your Website 2017</span>
+		</div>
+		
 	</footer>
 	<!-- Enlaza aquí tu archivo JS -->
 	<script type="text/javascript" src="js/app.js"></script>
