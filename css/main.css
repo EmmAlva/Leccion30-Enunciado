@@ -16,6 +16,10 @@ header{
 	height: 100px;
 	display: flex;
 	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
 	
 }
 header div{
@@ -54,6 +58,9 @@ section > div{
 }
 
 #intro{
+	margin-top: 100px;
+}
+#intro,#about{
 	background: rgb(24, 188, 156);
 	padding: 55px 0;
 }
@@ -83,16 +90,17 @@ hr.star:after{
 	font-size: 1.5rem;
 }
 /*SECTION #2*/
-#portafolio{
+#portafolio,#contact{
 	color: rgb(51, 51, 51);
 }
 h2{
 	font-size: 2.4rem;
 }
-hr.star:nth-child(2){
+hr.dark{
 	color: rgb(44, 62, 80);
 }
-#portafolio .star:after{
+
+#portafolio .star:after, #contact .star:after{
 	background: #fff;
 }
 div.row{
@@ -106,17 +114,18 @@ div div img{
 }
 
 /*SECTION #3*/
-
-
-
-
-
-
-#about{
-	background: rgb(31, 137, 125);
-
+#about div.row{
+	width: 60%;
+	margin:0 auto;
+}
+div p{
+	
 }
 
+p{
+	font-size: 20px;
+	text-align: left;
+}
 #contact{
 
 }
