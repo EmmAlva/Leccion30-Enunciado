@@ -13,7 +13,7 @@
 
 header{
 	background: rgb(44, 62, 80);
-	height: 100px;
+	
 	display: flex;
 	align-items: center;
 	position: fixed;
@@ -21,6 +21,15 @@ header{
 	top: 0;
 	z-index: 10;
 	
+}
+.nav-top{
+	height: 100px;
+}
+.nav-scroll{
+	height: 60px;
+}
+.nav-scroll div{
+	font-size: 1.4rem;
 }
 header div{
 	font-size: 1.7rem;
@@ -48,6 +57,16 @@ li a{
 li a:hover{
 	color: rgb(31, 137, 125);
 }
+/*Efecto scroll en botones*/
+
+.link-hover{
+	background: #18bc9c;
+	color: white;
+
+}
+
+/*SECCIONES*/
+
 section{
 	width: 100%;
 	margin:0px auto;
