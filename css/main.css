@@ -8,6 +8,32 @@
  body{
  	color: #fff;
  }
+.btn{
+	border-radius: 8px;
+	width: 87px;
+	height: 48px;
+	box-shadow:none;
+	border:none;
+	cursor: pointer;
+
+}
+.btn-color{
+	background: #18bc9c;
+	color: white;
+	font-size: 1.1rem;
+	border: 1px solid #fff;
+
+}
+.btn-lg{
+	width: 200px;
+
+}
+
+
+.btn:focus{
+	outline: none;
+}
+
 
 /*HEADER*/
 
@@ -59,11 +85,18 @@ li a:hover{
 }
 /*Efecto scroll en botones*/
 
-.link-hover{
+.active-link{
 	background: #18bc9c;
 	color: white;
-
 }
+
+
+
+
+
+
+
+
 
 /*SECCIONES*/
 
@@ -145,9 +178,33 @@ p{
 	font-size: 20px;
 	text-align: left;
 }
-#contact{
+
+.btn.fa-download:hoverrgb(24, 188, 156);{
+	background: #fff;
+	color:rgb(24, 188, 156);
 
 }
+
+/*SECTION CONTACT*/
+
+#contact{
+	padding: 130px 30px;
+
+}
+input, textarea{
+	border:none;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 20px 5px;
+	width: 90%;
+}
+
+input:focus{
+	outline: none;
+}
+
+
+/*FOOTER*/
 footer{
 	background: rgb(44, 62, 80);
 }
