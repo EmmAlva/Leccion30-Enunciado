@@ -40,7 +40,34 @@
 
 
  /*form*/
- var inputTitle = document.getElementById("input-title"),
-	labTitle = document.getElementById("title-lab"),
-	inputText = document.getElementById("input-texta"),
-	labText = document.getElementById("texta-lab");
+var formAction = document.getElementsByClassName("form-action"),
+    labelTitle = document.getElementsByClassName("label-title");
+
+   formAction[0].addEventListener('click',function(){    
+        labelTitle[0].classList.add("active");
+        labelTitle[1].classList.remove("active");
+        labelTitle[2].classList.remove("active");
+        labelTitle[3].classList.remove("active");
+        });
+    formAction[1].addEventListener('click',function(){    
+        labelTitle[1].classList.add("active");     labelTitle[0].classList.remove("active");
+        labelTitle[2].classList.remove("active");
+        labelTitle[3].classList.remove("active");
+
+        });
+     formAction[2].addEventListener('click',function(){    
+        labelTitle[2].classList.add("active");
+        labelTitle[1].classList.remove("active");
+        labelTitle[0].classList.remove("active");
+        labelTitle[3].classList.remove("active");
+      });
+     formAction[3].addEventListener('click',function(){    
+        labelTitle[3].classList.add("active");
+        labelTitle[1].classList.remove("active");
+        labelTitle[2].classList.remove("active");
+        labelTitle[0].classList.remove("active");
+      });
+      
+  
+
+

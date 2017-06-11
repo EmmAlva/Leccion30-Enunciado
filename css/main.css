@@ -90,6 +90,20 @@ li a:hover{
 	color: white;
 }
 
+.input-field{
+    position: relative;
+    background: #af9;
+    
+}
+.input-field label{
+    position: absolute;
+    left: 50px;
+    color: darkgray;
+}
+label.active{
+    transform: translateY(-140%);
+    color: cadetblue;
+}
 
 
 
@@ -199,11 +213,13 @@ input, textarea{
 	width: 90%;
 }
 
-input:focus{
+input:focus, textarea:focus{
 	outline: none;
 }
 
-
+textarea{
+    resize: none;
+}
 /*FOOTER*/
 footer{
 	background: rgb(44, 62, 80);
